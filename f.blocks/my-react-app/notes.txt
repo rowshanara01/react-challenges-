@@ -1,0 +1,29 @@
+Key Functions and Their Purpose
+getRandomPosition:
+
+Generates random x and y coordinates within the screen boundaries.
+Ensures new blocks don't appear off-screen.
+addBlock:
+
+Adds a new block to the blocks state.
+The new block has a random position and a parentId linking it to its parent.
+onDragStart:
+
+Triggered when the user starts dragging a block.
+Saves the blockId of the dragged block in the drag event's dataTransfer.
+onDragOver:
+
+Allows the block to be dropped by preventing the default behavior.
+Without this, the browser's default drag-and-drop behavior would interfere.
+onDrop:
+
+Updates the position of the dragged block based on where it was dropped.
+Uses e.clientX and e.clientY to determine the mouse position.
+SVG <line> Rendering:
+
+Draws dashed lines between parent and child blocks.
+The x1, y1 (parent center) and x2, y2 (child center) attributes define the line endpoints.
+Dynamic Block Rendering:
+
+Each block is rendered at its position with a draggable interface.
+Clicking the + button inside a block creates a child block.

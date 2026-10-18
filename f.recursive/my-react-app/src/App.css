@@ -1,0 +1,31 @@
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.partition {
+  border: 1px solid black;
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  /* z-index: 10; */
+}
+
+button {
+  margin: 0 2px;
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  /* background: gray; */
+  cursor: pointer;
+}
