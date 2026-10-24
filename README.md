@@ -54,7 +54,7 @@ project-name/
 
    ```bash
    git clone https://github.com/rowshanara01/your-repo-name.git
-   ```
+   ``
 
 2. Go into the project folder
 
